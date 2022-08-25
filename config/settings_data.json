@@ -142,8 +142,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/image-speaker-zx9_a7f42514-6ed5-4cfc-bf56-aeac30afbac3.png",
-          "logo_width": 90,
+          "logo_width": 100,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
