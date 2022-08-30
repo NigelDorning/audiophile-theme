@@ -1,10 +1,20 @@
 <header>
 
+    {{ section.settings.logo | image_url: width: 150 | image_tag }}
 
+    <nav>
+        <ul>
+            {% for link in section.settings.main_menu.links %}
+                <li>
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
 
 </header>
 
-{{ 'header.css' | asset_url }}
+{{ 'header.css' | asset_url | stylesheet_tag }}
 
 {% schema %}
 {
@@ -17,7 +27,7 @@
         },
         {
             "label": "Main Menu",
-            "id": "main-menu",
+            "id": "main_menu",
             "type": "link_list"
         }
     ],
