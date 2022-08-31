@@ -1,1 +1,16 @@
-{}
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/image-speaker-zx9_a7f42514-6ed5-4cfc-bf56-aeac30afbac3.png",
+          "main_menu": "main-menu"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
