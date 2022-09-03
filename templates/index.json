@@ -10,15 +10,9 @@
         "latest_product": "xx99-mark-ii",
         "button_text": "See Product"
       }
-    },
-    "default": {
-      "type": "default",
-      "settings": {
-      }
     }
   },
   "order": [
-    "1662216226cb5f1bf4",
-    "default"
+    "1662216226cb5f1bf4"
   ]
 }
