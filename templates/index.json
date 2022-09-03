@@ -1,10 +1,24 @@
 {
-    "sections": {
-        "default": {
-            "type": "default"
-        }
+  "sections": {
+    "1662216226cb5f1bf4": {
+      "type": "hero-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/image-hero.jpg",
+        "overline": "New Product",
+        "title": "XX99 Mark IIHeadphones",
+        "description": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.",
+        "latest_product": "xx99-mark-ii",
+        "button_text": "See Product"
+      }
     },
-    "order":[
-        "default"
-    ]
+    "default": {
+      "type": "default",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1662216226cb5f1bf4",
+    "default"
+  ]
 }
