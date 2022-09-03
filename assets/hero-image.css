@@ -1,0 +1,29 @@
+.hero-image {
+    position: relative;
+    color: white;
+    height: 729px;
+}
+
+.hero-image__inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-image__content {
+    position: relative;
+    max-width: 400px;
+    z-index: 10;
+}
+
+.hero-image__content > * + * {
+    margin-top: 3rem;
+}
+
+.hero-image__background {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 0;
+}

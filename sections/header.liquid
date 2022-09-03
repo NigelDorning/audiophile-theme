@@ -1,6 +1,7 @@
-<header>
-
-    <a href="/" class="logo">audiophile</a>
+<div class="container navbar">
+    <a href="/" class="logo">
+        {% render 'site-logo' %}
+    </a>
 
     <nav>
         <ul>
@@ -12,13 +13,17 @@
         </ul>
     </nav>
 
-</header>
+    <a href="{{ routes.cart_url }}">
+        {% render 'icon-cart' %}
+    </a>
+</div>
 
 {{ 'header.css' | asset_url | stylesheet_tag }}
 
 {% schema %}
 {
     "name": "Header",
+    "tag": "header",
     "settings": [
         {
             "label": "Main Menu",
@@ -33,3 +38,4 @@
     ]
 }
 {% endschema %}
+

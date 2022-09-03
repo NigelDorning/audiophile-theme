@@ -85,6 +85,7 @@ select {
     --hit-pink: 251, 175, 133;
     --white: 255, 255, 255;
     --black: 0, 0, 0;
+    --max-w: 1110px;
 }
 
 /* Typography */
@@ -130,6 +131,7 @@ h6 {
 }
 
 .overline {
+    display: block;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 10px;
@@ -140,4 +142,27 @@ h6 {
     font-size: 13px;
     line-height: 25px;
     letter-spacing: 1px;
+}
+
+/* Buttons */
+.button-1--default {
+  display: inline-block;
+  background-color: rgba(var(--raw-sienna), 1);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 1rem 3rem;
+}
+
+.button-1--default:hover {
+  background-color: rgba(var(--hit-pink), 1);
+}
+
+/* Global */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: auto;
 }

@@ -1,0 +1,66 @@
+<div class="container hero-image__inner">
+    <div class="hero-image__content">
+        <span class="overline">{{ section.settings.overline }}</span>
+        <h1>{{ section.settings.title }}</h1>
+        <p>{{ section.settings.description }}</p>
+        <a href="{{ section.settings.latest_product.url }}" class="button-1--default">
+            {{ section.settings.button_text }}
+        </a>
+    </div>
+    <div>
+        <img 
+            src="{{ section.settings.background_image.src | img_url : 'master' }}" 
+            alt="{{ section.settings.background_image.alt }}"
+            class="hero-image__background"
+        >
+    </div>
+</div>
+
+{{ 'hero-image.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+    "name": "Hero Image",
+    "tag": "section",
+    "class": "hero-image",
+    "settings": [
+        {
+            "label": "Background Image",
+            "id": "background_image",
+            "type": "image_picker"
+        },
+        {
+            "label": "Overline",
+            "id": "overline",
+            "type": "text",
+            "default": "New Product"
+        },
+        {
+            "label": "Title",
+            "id": "title",
+            "type": "text"
+        },
+        {
+            "label": "Description",
+            "id": "description",
+            "type": "textarea"
+        },
+        {
+            "label": "Latest Product",
+            "id": "latest_product",
+            "type": "product"
+        },
+        {
+            "label": "Button Text",
+            "id": "button_text",
+            "type": "text",
+            "default": "See Product"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hero Image"
+        }
+    ]
+}
+{% endschema %}
