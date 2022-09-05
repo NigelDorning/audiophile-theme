@@ -1,0 +1,48 @@
+<div class="container featured-collection__inner">
+    {% for block in section.blocks %}
+        {% case block.type %}
+            {% when 'featured_collection' %}
+                <div class="featured-collection__column">
+                    {% if block.settings.collection.image %}
+                        <img 
+                            src="{{ block.settings.collection.image | img_url: 'medium' }}" 
+                            alt="{{ block.settings.collection.image.alt }}"
+                        >
+                    {% endif %}
+                    <h6 class="featured-collection__title">{{ block.settings.collection.title }}</h6>
+                    <a href="{{ block.settings.collection.url }}" class="featured-collection__link">
+                        Shop {% render 'icon-arrow-right' %}
+                    </a>
+                </div>
+        {% endcase %}
+    {% endfor %}
+</div>
+
+{{ 'featured-collections.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+    "name": "Featured Collections",
+    "tag": "section",
+    "class": "featured-collection",
+    "max_blocks": 3,
+    "blocks": [
+        {
+            "name": "Featured Collection",
+            "type": "featured_collection",
+            "settings": [
+                {
+                    "label": "Collection",
+                    "id": "collection",
+                    "type": "collection"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Featured Collection"
+        }
+    ]
+}
+{% endschema %}
