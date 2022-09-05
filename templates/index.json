@@ -10,9 +10,40 @@
         "latest_product": "xx99-mark-ii",
         "button_text": "See Product"
       }
+    },
+    "16623988414b1bd142": {
+      "type": "featured-collections",
+      "blocks": {
+        "e8776661-b80e-468d-8140-0995ba2c9eee": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "headphones"
+          }
+        },
+        "30a6cd81-1847-4a1d-9ac0-0dceef2c8bb4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "speakers"
+          }
+        },
+        "ef60a3aa-0c55-45d0-8cc8-c65681868476": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "e8776661-b80e-468d-8140-0995ba2c9eee",
+        "30a6cd81-1847-4a1d-9ac0-0dceef2c8bb4",
+        "ef60a3aa-0c55-45d0-8cc8-c65681868476"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "1662216226cb5f1bf4"
+    "1662216226cb5f1bf4",
+    "16623988414b1bd142"
   ]
 }
