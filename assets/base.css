@@ -94,7 +94,8 @@ h1, h2, h3, h4, h5, h6, .overline, .sub-title {
     font-weight: 700;
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 56px;
     line-height: 58px;
     letter-spacing: 2px;
@@ -145,7 +146,8 @@ h6 {
 }
 
 /* Buttons */
-.button-1--default {
+.button-1,
+.button-2 {
   display: inline-block;
   background-color: rgba(var(--raw-sienna), 1);
   font-size: 13px;
@@ -156,8 +158,19 @@ h6 {
   padding: 1rem 3rem;
 }
 
-.button-1--default:hover {
+.button-2 {
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.button-1:hover {
   background-color: rgba(var(--hit-pink), 1);
+}
+
+.button-2:hover {
+  background: black;
+  color: white;
 }
 
 /* Global */

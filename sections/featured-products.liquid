@@ -1,0 +1,150 @@
+<div class="container featured-products__inner">
+
+    {% comment %} Featured Product One {% endcomment %}
+        
+        <div class="featured-products__one">
+            {% comment %} {% render 'circle-pattern' %} {% endcomment %}
+            <div class="column-one">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="{{ section.settings.product_1_image_desktop | img_url: 'large' }}">
+                    <img
+                        src="{{ section.settings.product_1_image_mobile | img_url: 'large' }}"
+                        alt="{{ section.settings.product_1_image_mobile.alt }}"
+                        class="product-one__image"
+                    >
+                </picture>
+            </div>
+
+            <div class="column-two">
+                <div class="copy">
+                    <h2 class="h1">{{ section.settings.product_1_heading }}</h2>
+                    <p>{{ section.settings.product_1_copy }}</p>
+                    <a href="{{ section.settings.product_1.url }}" class="button-2">See Product</a>
+                </div>
+            </div>
+        </div>
+
+    {% comment %} End Featured Product One {% endcomment %}
+
+</div>
+
+{{ 'featured-products.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+    "name": "Featured Products",
+    "tag": "section",
+    "class": "featured-products",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Product 1"
+        },
+        {
+            "label": "Product 1",
+            "id": "product_1",
+            "type": "product"
+        },
+        {
+            "label": "Image (Mobile)",
+            "id": "product_1_image_mobile",
+            "type": "image_picker"
+        },
+        {
+            "label": "Image (Tablet)",
+            "id": "product_1_image_tablet",
+            "type": "image_picker"
+        },
+        {
+            "label": "Image (Desktop)",
+            "id": "product_1_image_desktop",
+            "type": "image_picker"
+        },
+        {
+            "label": "Product 1 Heading",
+            "id": "product_1_heading",
+            "type": "text"
+        },
+        {
+            "label": "Product 1 Copy",
+            "id": "product_1_copy",
+            "type": "richtext"
+        },
+
+        {
+            "type": "header",
+            "content": "Product 2"
+        },
+        {
+            "label": "Product 2",
+            "id": "product_2",
+            "type": "product"
+        },
+        {
+            "label": "Image (Mobile)",
+            "id": "product_2_image_mobile",
+            "type": "image_picker"
+        },
+        {
+            "label": "Image (Tablet)",
+            "id": "product_2_image_tablet",
+            "type": "image_picker"
+        },
+        {
+            "label": "Image (Desktop)",
+            "id": "product_2_image_desktop",
+            "type": "image_picker"
+        },
+        {
+            "label": "Product 2 Heading",
+            "id": "product_2_heading",
+            "type": "text"
+        },
+        {
+            "label": "Product 2 Copy",
+            "id": "product_2_copy",
+            "type": "richtext"
+        },
+
+        {
+            "type": "header",
+            "content": "Product 3"
+        },
+        {
+            "label": "Product 3",
+            "id": "product_3",
+            "type": "product"
+        },
+        {
+            "label": "Image (Mobile)",
+            "id": "product_3_image_mobile",
+            "type": "image_picker"
+        },
+        {
+            "label": "Image (Tablet)",
+            "id": "product_3_image_tablet",
+            "type": "image_picker"
+        },
+        {
+            "label": "Image (Desktop)",
+            "id": "product_3_image_desktop",
+            "type": "image_picker"
+        },
+        {
+            "label": "Product 3 Heading",
+            "id": "product_3_heading",
+            "type": "text"
+        },
+        {
+            "label": "Product 3 Copy",
+            "id": "product_3_copy",
+            "type": "richtext"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Featured Products"
+        }
+    ]
+}
+{% endschema %}
