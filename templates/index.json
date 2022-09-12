@@ -40,10 +40,27 @@
       ],
       "settings": {
       }
+    },
+    "1663005204101930cb": {
+      "type": "featured-products",
+      "settings": {
+        "product_1": "zx9-speaker",
+        "product_1_image_mobile": "shopify:\/\/shop_images\/image-speaker-zx9_a7f42514-6ed5-4cfc-bf56-aeac30afbac3.png",
+        "product_1_image_desktop": "shopify:\/\/shop_images\/image-speaker-zx9.png",
+        "product_1_heading": "ZX9 SPEAKER",
+        "product_1_copy": "<p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.<\/p>",
+        "product_2": "",
+        "product_2_heading": "",
+        "product_2_copy": "",
+        "product_3": "",
+        "product_3_heading": "",
+        "product_3_copy": ""
+      }
     }
   },
   "order": [
     "1662216226cb5f1bf4",
-    "16623988414b1bd142"
+    "16623988414b1bd142",
+    "1663005204101930cb"
   ]
 }
