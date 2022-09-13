@@ -44,7 +44,7 @@
 
 .product-two__copy {
     position: absolute;
-    left: 1rem;
+    left: 2rem;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -78,7 +78,7 @@
 
 .product-three__copy {
     background: rgba(var(--seashell), 1);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 8px;
     margin-top: 1rem;
 }
