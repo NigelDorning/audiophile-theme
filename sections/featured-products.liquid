@@ -24,6 +24,37 @@
             </div>
         </div>
 
+        <div class="featured-products__two">
+            <div class="product-two__copy">
+                <h2 class="h4">{{ section.settings.product_2_heading }}</h2>
+                <a href="{{ section.settings.product_2.url }}" class="button-2">See Product</a>
+            </div>
+            <picture>
+                <source media="(min-width: 768px)" srcset="{{ section.settings.product_2_image_desktop | img_url: 'large' }}">
+                <img
+                    src="{{ section.settings.product_2_image_mobile | img_url: 'large' }}"
+                    alt="{{ section.settings.product_2_image_mobile.alt }}"
+                    class="product-two__image"
+                >
+            </picture>
+        </div>
+
+        <div class="featured-products__three">
+            <picture>
+                <source media="(min-width: 768px)" srcset="{{ section.settings.product_3_image_desktop | img_url: 'large' }}">
+                <img
+                    src="{{ section.settings.product_3_image_mobile | img_url: 'large' }}"
+                    alt="{{ section.settings.product_3_image_mobile.alt }}"
+                    class="product-three__image"
+                >
+            </picture>
+
+            <div class="product-three__copy">
+                <h2 class="h4">{{ section.settings.product_3_heading }}</h2>
+                <a href="{{ section.settings.product_3.url }}" class="button-2">See Product</a>
+            </div>
+        </div>
+
     {% comment %} End Featured Product One {% endcomment %}
 
 </div>

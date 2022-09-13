@@ -113,7 +113,8 @@ h3 {
     letter-spacing: 1.5px;
 }
 
-h4 {
+h4,
+.h4 {
     font-size: 28px;
     line-height: 38px;
     letter-spacing: 2px;
