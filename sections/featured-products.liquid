@@ -30,7 +30,7 @@
                 <a href="{{ section.settings.product_2.url }}" class="button-2">See Product</a>
             </div>
             <picture>
-                <source media="(min-width: 768px)" srcset="{{ section.settings.product_2_image_desktop | img_url: 'large' }}">
+                <source media="(min-width: 768px)" srcset="{{ section.settings.product_2_image_desktop | img_url: 'grande' }}">
                 <img
                     src="{{ section.settings.product_2_image_mobile | img_url: 'large' }}"
                     alt="{{ section.settings.product_2_image_mobile.alt }}"
@@ -41,7 +41,7 @@
 
         <div class="featured-products__three">
             <picture>
-                <source media="(min-width: 768px)" srcset="{{ section.settings.product_3_image_desktop | img_url: 'large' }}">
+                <source media="(min-width: 768px)" srcset="{{ section.settings.product_3_image_desktop | img_url: 'grande' }}">
                 <img
                     src="{{ section.settings.product_3_image_mobile | img_url: 'large' }}"
                     alt="{{ section.settings.product_3_image_mobile.alt }}"
